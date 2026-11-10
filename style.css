@@ -1,0 +1,44 @@
+:root{--blue:#2F62B0;--blue-dark:#1F4A8A;--gold:#f4b13e;--white:#fff;--black:#000}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--black);background:var(--white)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0}
+a{color:var(--blue)}a:hover{color:var(--blue-dark)}
+p{line-height:1.6}
+
+.nav{position:sticky;top:0;z-index:100;background:var(--white);box-shadow:0 2px 12px rgba(0,0,0,.12);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding:16px 64px}
+.brand{display:flex;align-items:center;gap:14px;font-size:20px;color:var(--blue)}
+.brand img{width:64px;height:64px;border-radius:50%;object-fit:cover}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:600;min-height:44px}
+.btn-blue{background:var(--blue);color:var(--white)}
+.btn-blue:hover{background:var(--blue-dark);color:var(--white)}
+.btn-gold{background:var(--gold);color:var(--black)}
+.btn-gold:hover{color:var(--black);filter:brightness(.95)}
+
+.hero{background:var(--blue);color:var(--white);padding:96px 64px;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.kicker{color:var(--gold);font-weight:600;letter-spacing:2px}
+.hero h1{font-size:clamp(36px,6vw,72px);line-height:1.05;max-width:900px}
+.hero p{font-size:22px;max-width:680px;margin:0}
+
+.block{padding:80px 64px;max-width:1280px;margin:0 auto}
+.block h2,.gold h2,.rdv h2{font-size:clamp(28px,4vw,44px)}
+.block p{font-size:20px;max-width:820px}
+.gold{background:var(--gold);padding:80px 64px}
+.gold h2{max-width:900px}
+.gold p{font-size:20px;max-width:820px}
+
+.cards{display:flex;flex-wrap:wrap;gap:24px;margin-top:32px}
+.card{flex:1 1 240px;background:var(--white);border:2px solid var(--blue);border-radius:16px;padding:28px}
+.card h3{font-size:24px}
+
+.rdv{background:var(--blue);color:var(--white);padding:80px 64px}
+.rdv p{font-size:20px}
+.slogan{font-size:24px;color:var(--gold);font-family:Fraunces,Georgia,serif}
+
+footer{display:flex;align-items:center;gap:16px;padding:24px 64px;font-size:14px}
+footer img{width:72px;height:72px;border-radius:50%;object-fit:cover}
+
+@media (max-width:640px){
+  .nav,.hero,.block,.gold,.rdv,footer{padding-left:20px;padding-right:20px}
+  .hero,.block,.gold,.rdv{padding-top:56px;padding-bottom:56px}
+}
