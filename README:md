@@ -1,0 +1,64 @@
+# OISVA & CENEB – « Nul n'a le droit d'être en bonne santé tout seul »
+
+Page web de sensibilisation publiée à l'occasion de la **Journée mondiale du diabète (14 novembre)**, avec un rendez-vous organisé à **Bouaké**. Elle accompagne la lettre ouverte aux femmes de l'**OISVA** (Organisation internationale pour la sauvegarde des valeurs africaines) et du **CENEB** (Centre d'éducation nutritionnelle et de bien-être).
+
+## Objectif
+
+Sensibiliser les femmes, qui décident des repas de la famille, à la prévention du diabète et de l'hypertension artérielle, et les inviter à rejoindre le mouvement lors de l'événement du 14 novembre.
+
+## Contenu de la page
+
+| Section | Description |
+|---|---|
+| **Navigation** | Logo, nom des organisations et bouton « Rejoindre le mouvement » |
+| **Hero** | Titre, accroche et lien vers l'appel aux femmes |
+| **Un ennemi silencieux** | Présentation des maladies non transmissibles (diabète, hypertension) |
+| **Appel aux femmes** | Les femmes nommées « ambassadrices permanentes de la santé partagée » |
+| **Quatre gestes pour agir** | Moins de sel, moins d'huile, se faire dépister, relayer le message |
+| **Rendez-vous** | Date, heure, lieu et contact de l'événement |
+| **Pied de page** | Logo et noms complets des organisations |
+
+## Structure du projet
+
+```
+.
+├── index.html   # Page principale
+├── style.css    # Styles de la page
+├── logo.png     # Logo OISVA (favicon, en-tête et pied de page)
+└── README.md
+```
+
+## Lancer le site
+
+Aucune installation n'est nécessaire.
+
+1. Placer `index.html`, `style.css` et `logo.png` dans le même dossier.
+2. Ouvrir `index.html` dans un navigateur.
+
+## À compléter avant publication
+
+Dans la section `#rdv` de `index.html`, remplacer les champs entre crochets :
+
+- `[HEURE]` : heure de l'événement
+- `[LIEU PRÉCIS]` : lieu exact à Bouaké
+- `[TÉLÉPHONE / WHATSAPP]` : numéro de contact
+
+## Personnalisation
+
+- **Textes** : modifiables directement dans `index.html`.
+- **Couleurs et mise en page** : dans `style.css` (boutons `btn-blue` et `btn-gold`, sections `.hero`, `.block`, `.gold`, `.rdv`, cartes `.card`).
+- **Polices** : *Fraunces* (titres) et *Inter* (texte), chargées depuis Google Fonts. Une connexion internet est requise pour les afficher.
+- **Logo** : remplacer `logo.png` en conservant le même nom de fichier.
+
+## Technologies
+
+- HTML5
+- CSS3
+- Google Fonts (Fraunces, Inter)
+
+## Organisations
+
+- **OISVA** : Organisation internationale pour la sauvegarde des valeurs africaines
+- **CENEB** : Centre d'éducation nutritionnelle et de bien-être
+
+> *OISVA, c'est vous, c'est nous : ensemble, sauvons des vies humaines.*
